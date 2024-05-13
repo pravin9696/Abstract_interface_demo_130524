@@ -1,0 +1,5 @@
+1) Write a abstract class shape which having abstract method Area()and display.
+write a class circle which inherit abstract class shape and override method Area() and display(). Use circle class and display area of circle
+
+2) Write a abstract class shape which having abstract method Area()and display.
+write a class Rectangle which inherit abstract class shape and override method Area() and display(). Use circle class and display area of Rectangle
