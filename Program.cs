@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -110,9 +111,32 @@ namespace Abstract_interface_demo_130524
             //objA = new child2_abc(1111);
             //objA.div(3, 3);
 
-            Circle c1 = new Circle(10);
-            c1.Area();
-            c1.Display();
+            //Circle c1 = new Circle(10);
+            //c1.Area();
+            //c1.Display();
+            //ref and object of same class
+            //myCalculator c1 = new myCalculator();
+            //c1.add(1, 2);// compile time polymorphism
+
+
+            ////ref parent and object of child
+
+            //calculator c2 = new myCalculator();
+            //c2.add(3, 4);
+            //c2.add(1.1f, 2.2f);
+
+            person p1 = new person(111,"rajesh","solapur");
+            teacher t1 = new teacher(456,45000,3333,"Vijay","Nagar");
+            student s1 = new student(99,78,222,"dinesh","Nashik");
+
+
+            runTimePoly rtp = new runTimePoly();
+            rtp.r1(p1);
+            Console.WriteLine("--------------");
+            rtp.r1(s1);
+            Console.WriteLine("-----------------");
+            rtp.r1(t1);
+
             Console.ReadKey();
         }
     }
